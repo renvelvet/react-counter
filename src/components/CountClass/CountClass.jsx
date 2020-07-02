@@ -14,12 +14,12 @@ export default class CountClass extends Component {
     }));
   };
   minNumber = () => {
-    if (this.state.num <= 0) {
-      alert("Angka tidak boleh negatif!");
-    } else {
+    if (this.state.num >= 1) {
       this.setState((state) => ({
         num: state.num - 1,
       }));
+    } else {
+      alert("Angka tidak boleh negatif!");
     }
   };
   resetNumber = () => {
